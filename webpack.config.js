@@ -11,6 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -41,6 +42,7 @@ module.exports = {
     ],
   },
   devServer: {
+    allowedHosts: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
   },
   plugins: [
